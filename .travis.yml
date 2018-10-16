@@ -1,0 +1,14 @@
+language: generic
+dist: xenial
+sudo: required
+script:
+- bash ./test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: sQBH+p7v0xOHwNG3UuO4VQ7HwJduS+haVHKJdD1EV+jA6UcofwhzItsDEI5n9iIc8txwrixJOk2Fh/mYmXxoXY2y07KmJU/E40F+oCEszqdl44Jn2J+7zDjCXd+qaYwD19D36GvmnqTN46HBCP1z2xE9DuCctxTIrggWNQYqjsUFhMbmYAKeoZ7p8W13ubULmYUTcAYJCzRn1I5CCx0oZ1BumdmWY6qufBIy7ZxDPj+sy9hApA5SpLYWQeSpYhMWZCqnSGPgG4oO1ct42nU/18Ciue/Yq55oTb2SKejEPflV4ojq7sKghOgWZaU/3w/L1GH2DVElotFOa+RAqn8Tef0mbPCv4bNLFmLQMetmDOgyGct4KN72MR42QhNeGbmSO0BmNmlBQWLBs6S8GcyslF90JtxUADXWJDK5iox7ImiQOeLE3tleokq4svk9sUreou3rUftL3iJZTkEGSxT/ty0Y/EGTt8xYIvT87ZtxzmfRy/4DwKqIJC7ALGuUfEUY5BvHERhSw5cMsUIF57PRIas6qqQ1tZuY2ird7fQF+uM8K1zi1WW+mTVnZFJaAPIE6/0fQrBrAYtPi422MO4EioufhfiqTGw3F21cFBlmBGv0NmrbRv1LExxn5m2hAIYCghh/VVhjrDxXyWXOAlPw9ek2wzdaEgceJ/5zoG20JIk=
+  file: master-script.sh
+  on:
+    repo: yaroslav-007/master-travis
+    branch: master
+    tags: true
