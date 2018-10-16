@@ -1,4 +1,4 @@
-If you don't have powershell install and to able to run the hello.sh script please do the following:
+If you don't have linux shell/bash installed and to able to run the hello.sh script please do the following:
 
 1. Install Vagrant from https://www.vagrantup.com/downloads.html according to your platform.
 2. Open Command Line Interpreter 
